@@ -1,12 +1,14 @@
 #include "personnage.h"
 
-Personnage::Personnage(std::string unNom, int uneForce, int uneVitalite, int uneMagie, int unEsprit, int uneDexterite, int uneChance, int desPointsDeVie, int desPdVMax, int desPointsDeMagie,  int desPMMax, QPoint *unePosition, QImage uneImage)
+Personnage::Personnage(std::string unNom, int uneForce, int uneVitalite, int uneMagie, int unEsprit, int uneDexterite, int uneChance, int desPointsDeVie, int desPdVMax, int desPointsDeMagie,  int desPMMax, QImage uneImage)
     : sonNom(unNom), saForce(uneForce), saVitalite(uneVitalite), saMagie(uneMagie), sonEsprit(unEsprit), saDexterite(uneDexterite), saChance(uneChance), sesPointsDeVie(desPointsDeVie), sesPdVMax(desPdVMax), sesPointsDeMagie(desPointsDeMagie), sesPMMax(desPMMax)
-    ,saPosition(*unePosition)
-{
-    sonImage = new QImage(uneImage);
 
 {
+    sonImage = new QImage(uneImage);
+    saPosition = new QPoint(0,0);
+}
+
+
 
 
 int Personnage::getChance()

@@ -37,7 +37,7 @@ public:
 
     Personnage(std::string unNom, int uneForce, int uneVitalite, int uneMagie, int unEsprit,
                int uneDexterite, int uneChance, int desPointsDeVie, int desPdVMax,
-               int desPointsDeMagie,  int desPMMax, QPoint *unePosition, QImage uneImage);
+               int desPointsDeMagie,  int desPMMax, QImage uneImage);
 
     //Accesseurs
     int getChance();

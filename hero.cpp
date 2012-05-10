@@ -8,7 +8,7 @@
 #include <cmath>
 
 Hero::Hero(std::string unNom, int uneForce, int uneVitalite, int uneMagie, int unEsprit, int uneDexterite, int uneChance, int desPointsDeVie, int desPdVMax, int desPointsDeMagie,  int desPMMax, int unNiveau, int desPointsdExperiences, int uneConstanteXP, int unNiveauSuivant, QImage uneImage)
-    :Personnage(unNom, uneForce, uneVitalite, uneMagie, unEsprit, uneDexterite, uneChance, desPointsDeVie, desPdVMax, desPointsDeMagie, desPMMax, QPoint* (0,0), uneImage),
+    :Personnage(unNom, uneForce, uneVitalite, uneMagie, unEsprit, uneDexterite, uneChance, desPointsDeVie, desPdVMax, desPointsDeMagie, desPMMax, uneImage),
      sonNiveau(unNiveau), sesPointsdExperiences(desPointsdExperiences), saConstanteXP(uneConstanteXP), sonNiveauSuivant(unNiveauSuivant)
 {
 }

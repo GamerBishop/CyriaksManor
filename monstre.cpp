@@ -2,7 +2,7 @@
 #include "hero.h"
 
 Monstre::Monstre(std::string unNom, int uneForce, int uneVitalite, int uneMagie, int unEsprit, int uneDexterite, int uneChance, int desPointsDeVie, int desPdVMax, int desPointsDeMagie,  int desPMMax, QImage uneImage)
-    : Personnage(unNom, uneForce, uneVitalite, uneMagie, unEsprit, uneDexterite, uneChance, desPointsDeVie, desPdVMax, desPointsDeMagie, desPMMax, QPoint(), uneImage)
+    : Personnage(unNom, uneForce, uneVitalite, uneMagie, unEsprit, uneDexterite, uneChance, desPointsDeVie, desPdVMax, desPointsDeMagie, desPMMax, uneImage)
 {
 }
 

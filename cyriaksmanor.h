@@ -20,7 +20,7 @@ class CyriaksManor : public QMainWindow
 public:
     explicit CyriaksManor(QWidget *parent = 0);
     ~CyriaksManor();
-    std::list<Monstre*> genererListeMonstre();
+//    std::list<Monstre*> genererListeMonstre();
 public slots:
     void Combat();
 
