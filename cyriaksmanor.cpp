@@ -11,7 +11,7 @@ CyriaksManor::CyriaksManor(QWidget *parent) :
     Vue *saVue = new Vue;
     setCentralWidget(saVue);
 
-    QObject::connect(saVue->sonTerrain->sonEquipe, SIGNAL(lanceCombat()), this, SLOT(Combat(saVue->sonTerrain->sonEquipe->sesHeros*)));
+    QObject::connect(saVue->sonTerrain->sonEquipe, SIGNAL(lanceCombat()), this, SLOT(Combat()));
 
 }
 
@@ -22,8 +22,9 @@ CyriaksManor::~CyriaksManor()
 }
 
 
-void CyriaksManor::Combat(std::vector<Hero*> lesHeros)
+void CyriaksManor::Combat()
 {
+    std::vector<Hero*>* lesHeros = saVue->sonTerrain->sonEquipe->getHero();
     std::cout<<"siglal du combat reçu"<<std::endl;
     //Ici ya du boulot
     //genererListeMonstre();
@@ -57,7 +58,7 @@ void CyriaksManor::Combat(std::vector<Hero*> lesHeros)
                     while (!uneVictoire || !uneDefaite)
             {
 
-                        for (leItHero=lesHeros.begin(); leItHero != lesHeros.end(); leItHero++)
+                        for (leItHero=lesHeros->begin(); leItHero != lesHeros->end(); leItHero++)
                         {
 
 
@@ -66,10 +67,10 @@ void CyriaksManor::Combat(std::vector<Hero*> lesHeros)
                         for (leItMonstre=listeMonstreGeneree.begin(); leItMonstre != listeMonstreGeneree.end(); leItMonstre++)
                         {
 
-                         //   std::pair<std::string , Personnage*> unePaire;
-                         //   unePaire.first="Attaque";
-                         //   unePaire.second = (lesHeros.at(rand()%(lesHeros.size()) - 1));
-                         //   stockActions[(*leItMonstre)]= lesHeros((rand()%4)-1)];
+//                            std::pair<std::string , Personnage*> unePaire;
+//                            unePaire.first="Attaque";
+//                            unePaire.second = (lesHeros.at(rand()%(lesHeros.size()) - 1));
+//                            stockActions[(*leItMonstre)]= lesHeros((rand()%4)-1)];
                         }
             }
 

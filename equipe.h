@@ -30,6 +30,7 @@ public:
     void afficher(QPainter* unPainter);
     void deplacer(QPoint unDeplacement);
     void Fuite();
+    std::vector<Hero*>* getHero();
     QPoint saPosition;
 
 signals:

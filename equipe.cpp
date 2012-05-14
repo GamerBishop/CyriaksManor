@@ -14,6 +14,11 @@ Equipe::Equipe(QPoint unePosition, QObject *parent) :
     saPosition+=QPoint(-25,-25);
 }
 
+std::vector<Hero*>* Equipe::getHero()
+{
+    return (&sesHeros);
+}
+
 void Equipe::afficher(QPainter *unPainter)
 {
     unPainter->save();
