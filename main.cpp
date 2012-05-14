@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     CyriaksManor leJeu;
     leJeu.show();
 
-//    srand(time(NULL));
+    srand(time(NULL));
 //    std::cout << "Let's Fight!" << std::endl;
 //    int compteur(0);
 

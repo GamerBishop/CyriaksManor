@@ -22,7 +22,7 @@ public:
     ~CyriaksManor();
 //    std::list<Monstre*> genererListeMonstre();
 public slots:
-    void Combat();
+    void Combat(std::vector<Hero*> lesHeros);
 
 private:
     Ui::CyriaksManor *ui;

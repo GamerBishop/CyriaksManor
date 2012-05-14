@@ -22,7 +22,7 @@ private:
     QImage *sonImage;
 
     std::string sonNom;
-    std::list<Hero*> sesHeros;
+    std::vector<Hero*> sesHeros;
     std::list<Objet*> sesObjets;
 
 public:
